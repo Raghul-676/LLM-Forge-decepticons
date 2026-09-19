@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decepticons Legal AI — Indian Legal Assistant</title>
+  <meta name="description" content="AI Assistant for Indian Legal Reasoning, Statutory Analysis, and Case Law Strategy.">
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="brand">
+      <div class="brand-emblem">⚖️</div>
+      <div class="brand-text">
+        <h1>Decepticons Legal AI</h1>
+        <div class="brand-subtitle">Indian Legal Reasoning & Litigation Strategy Assistant</div>
+      </div>
+    </div>
+    
+    <div class="nav-actions">
+      <button id="btnReset" class="btn-secondary" title="Start a fresh legal consultation">
+        + New Consultation
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Split-Pane Workspace -->
+  <main class="workspace">
+
+    <!-- Left Column: Conversational Console -->
+    <section class="console-pane">
+      
+      <!-- Messages / Conversation Scroll -->
+      <div id="chatScroll" class="chat-scroll">
+        
+        <!-- Clean Empty State with Legal Quote -->
+        <div id="emptyState" class="empty-state">
+          <div class="empty-icon">⚖️</div>
+          <h2 class="empty-title">Indian Legal Consultation Console</h2>
+          <blockquote class="legal-quote">
+            <p class="quote-sanskrit">“यतो धर्मस्ततो जयः”</p>
+            <p class="quote-translation">“Where there is adherence to Law and Righteousness, there is Victory.”</p>
+            <cite class="quote-source">— Motto of the Supreme Court of India</cite>
+          </blockquote>
+        </div>
+
+        <!-- Dynamic Message Stream Container -->
+        <div id="messageStream" style="display: flex; flex-direction: column; gap: 20px; width: 100%;"></div>
+
+      </div>
+
+      <!-- Input Form -->
+      <footer class="console-input-area">
+        <form id="caseForm" class="input-row">
+          <textarea 
+            id="caseInput" 
+            class="case-textarea" 
+            placeholder="Describe your legal problem in plain English (e.g. loan default, cheque dishonor, tenancy dispute, service grievance, or statutory query)..."
+            rows="2"
+          ></textarea>
+          <button type="submit" id="btnSubmit" class="btn-submit">
+            <span>Analyze Case</span>
+            <span>➔</span>
+          </button>
+        </form>
+        <div class="input-hints">
+          <span>Indian Law &bull; Central Acts, Constitution of India & Supreme Court Jurisprudence</span>
+          <span>Press <strong>Enter</strong> to submit, <strong>Shift+Enter</strong> for new line</span>
+        </div>
+      </footer>
+
+    </section>
+
+    <!-- Right Column: Verified Supporting Sources -->
+    <aside class="inspector-pane">
+      
+      <div class="inspector-header">
+        <h3 class="inspector-title">Verified Legal Authorities (<span id="sourceCountBadge">0</span>)</h3>
+        <p class="inspector-subtitle">Official statutory provisions and precedents cited in your legal opinion.</p>
+      </div>
+
+      <div class="inspector-content">
+        <div id="sourcesPlaceholder" style="color: var(--text-muted); text-align: center; padding: 48px 16px; font-size: 13.5px; line-height: 1.5;">
+          Official statutory sections and Supreme Court authorities will appear here once verified.
+        </div>
+        <div id="sourcesList" style="display: flex; flex-direction: column; gap: 12px;"></div>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

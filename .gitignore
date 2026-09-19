@@ -1,0 +1,104 @@
+# ============================================================
+# Python & Bytecode
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ============================================================
+# Virtual Environments
+# ============================================================
+legal-llm-venv/
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ============================================================
+# Environment Variables & Secrets
+# ============================================================
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# ============================================================
+# Datasets, Embeddings & Large Files (>100MB)
+# ============================================================
+data/
+scripts/data/
+*.npy
+*.jsonl
+*.parquet
+*.csv.gz
+*.tar.gz
+*.zip
+
+# ============================================================
+# Model Checkpoints, Weights & Large Artifacts
+# ============================================================
+models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.ckpt
+wandb/
+
+# ============================================================
+# Outputs & Logs
+# ============================================================
+outputs/
+*.log
+*.tmp
+tmp/
+
+# ============================================================
+# Jupyter Notebooks & Caches
+# ============================================================
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ============================================================
+# Testing & Code Quality
+# ============================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ============================================================
+# Operating System & IDE Files
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.cursor/
