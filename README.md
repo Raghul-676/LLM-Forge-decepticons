@@ -175,7 +175,3 @@ Open your browser and navigate to:
 This project is an experimental artificial intelligence prototype developed for legal research, educational, and workflow demonstration purposes. It references Indian statutes and judicial precedents, but **does not constitute formal legal advice**. For binding legal counsel or court representation, always consult a qualified advocate or legal practitioner.
 
 ---
-
-## 📜 License
-
-This project is licensed under the terms of the MIT License.
