@@ -115,6 +115,16 @@ GROQ_API_KEY=your_groq_api_key_here
 
 ---
 
+### 6. Download Required Datasets & Embeddings
+Download the indexed legal corpus, ILSIC scenarios, and pre-computed BGE embeddings from Hugging Face:
+```bash
+python scripts/download_data.py
+```
+
+This populates `scripts/data/rag/` automatically with the required runtime files (~2.8 GB).
+
+---
+
 ## 🖥️ Launching the Web Chatbot
 
 ### Method 1: Windows Batch File (Recommended)
