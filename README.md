@@ -116,12 +116,15 @@ GROQ_API_KEY=your_groq_api_key_here
 ---
 
 ### 6. Download Required Datasets & Embeddings
-Download the indexed legal corpus, ILSIC scenarios, and pre-computed BGE embeddings from Hugging Face:
+Download the indexed legal corpus, ILSIC scenarios, and pre-computed BGE embeddings from the Hugging Face dataset:  
+🔗 **Dataset Repository**: [https://huggingface.co/datasets/raghul12345678/decepticons-legal-rag-data](https://huggingface.co/datasets/raghul12345678/decepticons-legal-rag-data)
+
+Run the included automated download script:
 ```bash
 python scripts/download_data.py
 ```
 
-This populates `scripts/data/rag/` automatically with the required runtime files (~2.8 GB).
+This downloads and populates `scripts/data/rag/` automatically with all required runtime files (~2.77 GB).
 
 ---
 
